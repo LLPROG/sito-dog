@@ -19,6 +19,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
     <title>Doggy</title>
 </head>
 
@@ -30,22 +31,31 @@
             <header class="col d-flex flex-direction-row align-items-center">
                 <img src="img/dog.PNG" alt="dog" class="logo">
                 <div class="dropmenu">
-                    <a href="#" class="drop">
+                    <a href="#" class="drop" id="drop">
                         <div class="canva-drop">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
                     </a>
+
                     <ul class="menu-large">
-                        <li><a href="#">CIAO</a></li>
-                        <li><a href="#">CIAO</a></li>
-                        <li><a href="#">CIAO</a></li>
+                        <li><a href="#info">INFO</a></li>
+                        <li><a href="#service">SERVIZI</a></li>
+                        <li><a href="#contacts">CONTATTI</a></li>
                     </ul>
-                    <ul class="menu-mobile d-none">
-                        <li><a href="#">CIAO</a></li>
-                        <li><a href="#">CIAO</a></li>
-                        <li><a href="#">CIAO</a></li>
+
+                    <a href="#" class="hide" id="hide">
+                        <div class="canva-x">
+                            <span class="l"></span>
+                            <span class="r"></span>
+                        </div>
+                    </a>
+
+                    <ul class="menu-mobile" id="menuMobile">
+                        <li><a href="#info" class="link">INFO</a></li>
+                        <li><a href="#service" class="link">SERVIZI</a></li>
+                        <li><a href="#contacts" class="link">CONTATTI</a></li>
                     </ul>
                 </div>
             </header>
@@ -60,7 +70,7 @@
     </section>
 
     <!-- info -->
-    <section class="container-lg info pt-5 text-center">
+    <section id="info" class="container-lg info pt-5 text-center">
         <!-- primo blocco -->
 
         <div class="row one align-items-center">
@@ -111,7 +121,7 @@
     </section>
 
     <!-- service  -->
-    <section class="container-fluid text-center service">
+    <section id="service" class="container-fluid text-center service">
         <!-- title -->
         <div class="row">
             <div class="col">
@@ -163,7 +173,7 @@
     </section>
 
     <!-- contacts -->
-    <section class="container-fluid contacts">
+    <section id="contacts" class="container-fluid contacts">
         <h1>
             MODULO DI CONTATTO
         </h1>
