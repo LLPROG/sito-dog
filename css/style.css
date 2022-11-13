@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #2a9d90;
+    --yelow: #e4bd70;
+    --red: #e9705e;
+    --blue: #2a4c54;
+    --white: #e0e4e4;
+    --black:#3b4637;
+}
+
+body {
+    width: 100%;
+}
+
+html {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+}
+
+.canva-drop {
+    width: 40px;
+    height: 40px;
+    /* BORDER: 1PX SOLID BLACK; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.canva-drop span {
+    width: 8px;
+    height: 100%;
+    background-color: var(--yelow);
+    border-radius: 2px;
+}
+
+.hero {
+    background-color: var(--green);
+}
+
+header {
+    /* border-bottom: 2px solid var(--blue); */
+    position: fixed;
+    z-index: 999;
+    background-color: var(--green);
+    box-shadow: 0 4px 2px -2px var(--green);
+}
+
+.logo {
+    height: 70px;
+}
+
+.dropmenu {
+    margin-left: auto;
+}
+
+.dropmenu .drop {
+    display: none;
+}
+
+.dropmenu .menu-large {
+    width: 300px;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropmenu .menu-large li a {
+    color: var(--yelow);
+}
+
+.dropmenu .menu-mobile {
+    display: none;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .cont_logo {
+    width: 600px;
+    padding-top: 80px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .dropmenu .drop {
+        display: block;
+    }
+    .content .cont_logo {
+        width: 400px;
+    }
+
+    .dropmenu .menu-large {
+        display: none;
+    }
+
+    .dropmenu .menu-mobile {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 502px) {
+
+    .content .cont_logo {
+        width: 280px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
+
+
+/* sezione info  */
+
+.info {
+    /* font-size: 2em; */
+    color: var(--blue);
+}
+
+.info img {
+    width: 70%;
+}
+
+/* row one */
+.info .row.one {
+    font-size: 4em;
+}
+
+.info .row.one .red {
+    font-size: 2.3em;
+    color: var(--red);
+}
+
+.info .row.one .green {
+    font-size: 2.3em;
+
+    color: var(--green);
+}
+
+
+
+/* row two */
+
+.info .row.two {
+    font-size: 2.3em;
+}
+
+.info .row.two .red {
+    font-size: 2em;
+    color: var(--red);
+}
+
+.info .row.two .green {
+    font-size: 2em;
+    color: var(--green);
+}
+
+/* row tree */
+
+.info .row.tree {
+    font-size: 2.4em;
+}
+
+.info .row.tree .red {
+    font-size: 1.8em;
+    color: var(--red);
+}
+
+.info .row.tree .green {
+    font-size: 1.8em;
+    color: var(--green);
+}
+
+/* row four */
+
+.info .row.four {
+    font-size: 2em;
+}
+
+.info .row.four .red {
+    font-size: 1.8em;
+    color: var(--red);
+}
+
+.info .row.four .green {
+    font-size: 1.8em;
+    color: var(--green);
+}
+
+@media screen and (max-width: 1250px) {
+    .info .row.one {
+        font-size: 3em;
+    }
+
+    .info .row.two {
+        font-size: 1.7em;
+    }
+
+    .info .row.tree {
+        font-size: 2em;
+    }
+
+    .info .row.four {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .info .row.one {
+        font-size: 2.6em;
+    }
+
+    .info .row {
+        padding: 0.5em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .info .row.one {
+        font-size: 1.5em;
+    }
+
+    .info .row.two {
+        font-size: 1em;
+    }
+
+    .info .row.tree {
+        font-size: 1em;
+    }
+
+    .info .row.four {
+        font-size: 1em;
+    }
+}
+
+
+/* service */
+
+.service {
+    padding: 0 7rem;
+    padding-top: 30px;
+    background-color: var(--yelow);
+    color:  var(--blue);
+}
+
+.service h1 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.service .blocks  > div{
+    min-block-size: 200px;
+
+    padding: 1rem;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.service .blocks .square{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.service .blocks .back-green{
+    background-color: var(--green);
+    color: var(--yelow);
+}
+
+
+@media screen and (max-width: 900px) {
+    .service {
+        padding: 0 1rem;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .service .blocks .square{
+        border: 1px solid black;
+        width: 150px;
+        height: 150px;
+        font-size: 1.5em;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .service .blocks .square{
+        border: 1px solid black;
+        width: 110px;
+        height: 110px;
+        font-size: 1em;
+
+    }
+}
+
+.contacts {
+    position: relative;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+
+    color: var(--blue );
+}
+
+.contacts h1 {
+    color: var(--blue );
+
+    font-size: 3em;
+    padding-left: 25rem;
+    padding-bottom: 0.3em;
+
+}
+
+.contacts #contactForm {
+    padding-left: 25rem;
+    padding-right: 5rem;
+
+    padding-bottom: 0.5em;
+}
+
+.contacts .pre-footer {
+    padding: 3rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--red);
+}
+
+.contacts .pre-footer > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacts .pre-footer img {
+    width: 80px;
+}
+
+.contacts footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contacts footer p {
+    font-size: 2em;
+    padding-left: 25rem;
+
+}
+
+.contacts footer ul {
+    display: flex;
+}
+
+.contacts footer ul li {
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+
+    .contacts h1 {
+        text-align: center;
+        font-size: 3em;
+        padding-left: 0;
+    
+    }
+    
+    .contacts #contactForm {
+        padding-left: 2rem;
+        padding-right: 1rem;
+
+    }
+
+    .contacts .pre-footer {
+        padding: 3rem;
+        position: static;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        background-color: var(--red);
+    }
+
+    .contacts footer p {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .contacts footer p {
+        display:  none;
+    }
+
+    .contacts .pre-footer {
+
+        flex-direction: column;
+    }
+}
