@@ -3,7 +3,8 @@ let menuMobile = document.getElementById('menuMobile');
 let hidemenu = document.getElementById('hide');
 let body = document.body;
 let links = document.querySelectorAll('.link');
-let header = document.getElementsByTagName('header')
+let header = document.getElementsByTagName('header');
+let hero = document.querySelector('.hero');
 
 let open = false
 
@@ -46,28 +47,34 @@ links.forEach((link) => {
 
 // header effect 
 
-let lastscroll = 0
 
 window.addEventListener('scroll', () => {
-    const currentscroll = window.pageYOffset
-    console.log('cur' + currentscroll)
-    console.log('last' + lastscroll)
+    let heroH = hero.offsetHeight;
+    let headerH = header[0].offsetHeight;
 
+    console.log(headerH)
+
+    const currentscroll = window.pageYOffset
+
+    if (currentscroll > headerH) {
+        body.classList.add('translate-header');
+    }
+
+    if (currentscroll >= heroH) {
+        body.classList.add('show-header');
+        body.classList.remove('translate-header');
+    }
 
     if (currentscroll <= 0) {
-        body.classList.remove('scroll-up');
+        body.classList.remove('show-header');
+        body.classList.remove('translate-header');
     }
 
-    if (currentscroll > lastscroll && !body.classList.contains('scroll-down')) {
-        body.classList.remove('scroll-up');
-        body.classList.add('scroll-down');
-    }
-
-    if (currentscroll < lastscroll && body.classList.contains('scroll-down')) {
-        body.classList.remove('scroll-down');
-        body.classList.add('scroll-up');
-    }
+    // if (currentscroll < scroll && body.classList.contains('scroll-down')) {
+    //     body.classList.remove('scroll-down');
+    //     body.classList.add('scroll-up');
+    // }
 
 
-    lastscroll = currentscroll;
+    // lastscroll = currentscroll;
 })
