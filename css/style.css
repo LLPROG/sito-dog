@@ -16,10 +16,13 @@
 html {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 500;
+    width: 100%;
+    height: 100%;
 }
 
 body {
     width: 100%;
+    position: relative;
 }
 
 body.hidescroll {
@@ -34,6 +37,8 @@ body.hidescroll {
 header {
     /* border-bottom: 2px solid var(--blue); */
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999;
     background-color: var(--green);
     box-shadow: 0 4px 2px -2px var(--green);
@@ -113,6 +118,7 @@ header {
     line-height: 70px;
     display: flex;
     justify-content: space-around;
+    font-size: 2em;
 }
 
 .dropmenu .menu-large li a {
@@ -168,6 +174,23 @@ header {
 
     .dropmenu .menu-large {
         display: none;
+    }
+
+    .dropmenu .menu-mobile {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        background-color: var(--red);
+        display: none;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-left: 20px;
+        font-size: 4em;
     }
 }
 
@@ -436,17 +459,26 @@ header {
 }
 
 .contacts footer p {
-    font-size: 2em;
+    text-align: center;
+    font-size: 2.5em;
     padding-left: 25rem;
 
 }
 
 .contacts footer ul {
+    width: 50%;
+    /* border: 1px solid black; */
     display: flex;
+    justify-content: space-around;
 }
 
 .contacts footer ul li {
     display: flex;
+}
+
+.contacts footer ul li i {
+    font-size: 3em;
+    color: var(--blue);
 }
 
 @media screen and (max-width: 900px) {
@@ -488,5 +520,12 @@ header {
     .contacts .pre-footer {
 
         flex-direction: column;
+    }
+
+    .contacts footer ul {
+        width: 70%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-around;
     }
 }

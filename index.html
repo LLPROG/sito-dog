@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,9 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -85,7 +88,7 @@
         <!-- secondo blocco -->
 
         <div class="row two align-items-center">
-            <div class="col-12 col-md-6 order-md-1 order-2">
+            <div class="col-12 col-md-6 -1 order-2">
                 <img src="img/zampa_dog.PNG" alt="">
             </div>
             <div class="col-12 col-md-6 order-md-2 order-1">
@@ -184,39 +187,40 @@
 
             <!-- Name input -->
             <div class="mb-3">
-                <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                <input class="form-control" id="name" type="text" placeholder="Nome" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="name:required">Il campo nome é obbligatorio.</div>
             </div>
 
             <!-- Email address input -->
             <div class="mb-3">
-                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
+                <input class="form-control" id="emailAddress" type="email" placeholder="Indirizzo email"
                     data-sb-validations="required, email" />
                 <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Il campo email é obbligatorio.
                 </div>
             </div>
 
             <!-- Message input -->
             <div class="mb-3">
-                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"
+                <textarea class="form-control" id="message" type="text" placeholder="Messaggio" style="height: 10rem;"
                     data-sb-validations="required"></textarea>
-                <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="message:required">Il campo messaggio é obbligatorio.
+                </div>
             </div>
 
             <!-- Form submissions success message -->
             <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">Form submission successful!</div>
+                <div class="text-center mb-3">Messaggio inviato</div>
             </div>
 
             <!-- Form submissions error message -->
             <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">Error sending message!</div>
+                <div class="text-center text-danger mb-3">Messaggio non inviato</div>
             </div>
 
             <!-- Form submit button -->
             <div class="d-grid">
-                <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                <button class="btn btn-primary btn-lg" type="submit">Invia</button>
             </div>
 
         </form>
@@ -241,10 +245,12 @@
                 SEGUICI
             </p>
             <ul>
-                <li><a href="#">FACE</a></li>
-                <li><a href="#">INST</a></li>
-                <li><a href="#">TIK</a></li>
-                <li><a href="#">LINK</a></li>
+                <li><a href="https://www.facebook.com/DoggyParkASD" target=”_blank”><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/doggypark_palermo/?igshid=YmMyMTA2M2Y=" target=”_blank”><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" target=”_blank”><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#" target=”_blank”><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </footer>
 
