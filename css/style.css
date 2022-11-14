@@ -49,6 +49,9 @@ header {
     background-color: var(--green);
     box-shadow: 0 4px 2px -2px var(--green);
     transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
     /* transform: translateY(0); */
 }
 
@@ -149,7 +152,7 @@ header {
     display: none;
     justify-content: space-around;
     flex-direction: column;
-    padding-left: 20px;
+    padding: 50px;
     font-size: 5em;
 }
 
