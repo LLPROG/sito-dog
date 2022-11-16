@@ -142,10 +142,10 @@
                 <div class="square">ADDESTRAMENTO</div>
             </div>
             <div class="col-6 col-sm-4 col-xl-3">
-                <div class="square  back-green">PET THERAPY</div>
+                <div class="square  back-green back-y">PET THERAPY</div>
             </div>
             <div class="col-6 col-sm-4 col-xl-3">
-                <div class="square">RALLY - 0</div>
+                <div class="square back-g">RALLY - 0</div>
             </div>
             <div class="col-6 col-sm-4 col-xl-3">
                 <div class="square  back-green">RICERCA OLFATTIVA</div>
@@ -154,10 +154,10 @@
                 <div class="square">PUPPY CLASS</div>
             </div>
             <div class="col-6 col-sm-4 col-xl-3">
-                <div class="square  back-green">AGILITY</div>
+                <div class="square  back-green back-y">AGILITY</div>
             </div>
             <div class="col-6 col-sm-4 col-xl-3">
-                <div class="square">CORSO DI FORMAZIONE</div>
+                <div class="square back-g">CORSO DI FORMAZIONE</div>
             </div>
             <div class="col-6 col-sm-4 col-xl-3">
                 <div class="square  back-green">ASILO</div>
@@ -166,10 +166,10 @@
                 <div class="square">HOOPERS</div>
             </div>
             <div class="col-6 col-sm-4 col-xl-3">
-                <div class="square  back-green">PENSIONE</div>
+                <div class="square  back-green back-y">PENSIONE</div>
             </div>
             <div class="col-6 col-sm-4 col-xl-3">
-                <div class="square">TANTO ALTRO</div>
+                <div class="square back-g">TANTO ALTRO</div>
             </div>
         </div>
 
@@ -183,45 +183,13 @@
         <!-- Wrapper container -->
 
         <!-- Bootstrap 5 starter form -->
-        <form id="contactForm">
+        <form id="contactForm" action="https://formsubmit.co/lucalobianco91@gmail.com" method="post">
 
-            <!-- Name input -->
-            <div class="mb-3">
-                <input class="form-control" id="name" type="text" placeholder="Nome" data-sb-validations="required" />
-                <div class="invalid-feedback" data-sb-feedback="name:required">Il campo nome é obbligatorio.</div>
-            </div>
-
-            <!-- Email address input -->
-            <div class="mb-3">
-                <input class="form-control" id="emailAddress" type="email" placeholder="Indirizzo email"
-                    data-sb-validations="required, email" />
-                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Il campo email é obbligatorio.
-                </div>
-            </div>
-
-            <!-- Message input -->
-            <div class="mb-3">
-                <textarea class="form-control" id="message" type="text" placeholder="Messaggio" style="height: 10rem;"
-                    data-sb-validations="required"></textarea>
-                <div class="invalid-feedback" data-sb-feedback="message:required">Il campo messaggio é obbligatorio.
-                </div>
-            </div>
-
-            <!-- Form submissions success message -->
-            <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">Messaggio inviato</div>
-            </div>
-
-            <!-- Form submissions error message -->
-            <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">Messaggio non inviato</div>
-            </div>
-
-            <!-- Form submit button -->
-            <div class="d-grid">
-                <button class="btn btn-primary btn-lg" type="submit">Invia</button>
-            </div>
+            <input type="text" name="name" placeholder="Mario Rossi" required>
+            <input type="email" name="email" placeholder="mariorossi@dog.it" required>
+            <textarea type="text" id="message" name="message" placeholder="Ciao, sono Mario" rows="4"
+                cols="50"></textarea>
+            <button type="submit" class="btn btn-send">Invia</button>
 
         </form>
 
